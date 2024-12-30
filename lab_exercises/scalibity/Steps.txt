@@ -1,0 +1,20 @@
+
+
+Steps : 
+-------
+1. Create a virtual enviroment 
+    -- python -m venv /path/to/new/virtual/environment
+2. Install pip
+    -- python get-pip.py
+3. Install 
+    Linux - https://www.poppastring.com/blog/wrk-for-benchmarking-and-testing
+    Windows - https://medium.com/@afomalhaut/winrk-a-wrk-alternative-for-windows-users-8c6aa6c6e23b
+4. Run the files from folders
+     a. caching
+     b. horizantal_scaling
+     c. vertical_scaling 
+5. Perform load test using wrk 
+     wrk -t2 -c50 -d20s http://127.0.0.1:5000/
+     t - concurrent users
+     c - concurrent requests 
+     d - duration
