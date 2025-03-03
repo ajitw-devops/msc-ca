@@ -1,0 +1,6 @@
+- name: Write a file using shell command
+  hosts: all
+  become: yes
+  tasks:
+    - name: Write content to a file
+      shell: echo "This is written by Ansible master" > /tmp/shell_output.txt

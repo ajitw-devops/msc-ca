@@ -1,0 +1,16 @@
+dnf module reset python39
+dnf module enable python39
+dnf install -y python3.12 python3.12-pip
+
+
+dnf module reset python39
+dnf module enable python39
+dnf install -y python39 python39-pip
+[root@03b5456bd21f /]# ansible
+ERROR: Ansible could not initialize the preferred locale: unsupported locale setting
+[root@03b5456bd21f /]# export LANG=C.UTF-8
+[root@03b5456bd21f /]# export LC_ALL=C.UTF-8
+[root@03b5456bd21f /]#
+
+
+ansible all -i inventory -m ping

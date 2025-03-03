@@ -1,0 +1,6 @@
+FROM centos:8
+
+WORKDIR /
+COPY id_rsa.pub /
+
+CMD ["/usr/lib/systemd/systemd"]
